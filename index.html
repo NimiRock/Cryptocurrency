@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingBlock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid p-0">
+
+        <div class="container-fluid loadingScreen position-fixed">
+            <div class="water"></div>
+        </div>
+  
+        <div class="navigation sticky-top">
+            <nav class="navbar d-flex align-items-center p-0 flex-wrap justify-content-between">
+                <a class="navbar-brand ml-2"><img class="headerTitle" src="https://fontmeme.com/permalink/200819/124b392b402d389c2f034d57044301f4.png" alt="nasdaqer-font" border="0"></a>
+                <div class="d-flex align-items-center">
+                    <button class="btn navBtn homeBtn m-0">Home</button>
+                    <button class="btn navBtn m-0 reportsBtn">Reports</button>
+                    <button class="btn navBtn aboutBtn m-0">About</button>
+                </div>
+                <div class="searchAndAddCoin d-flex">
+                    <input class="form-control mr-sm-2 searchBox" type="search" placeholder="Type Coin Symbol" aria-label="Search">
+                    <button data-toggle="collapse" data-target="#demo" class="addCoinBtn mr-2 p-1">Can't find your coin?</button>
+                </div>
+            </nav>
+        </div>
+
+        <div id="demo" class="collapse position-fixed bg-white p-2 rounded demo">
+            <p>No problemo!<br>Just type your coin ID and we'll add it!</p>
+            <div class="searchAndSend d-flex">
+                <input class="form-control mr-sm-2 mb-1 addCoinSearch" type="search" placeholder="usda, bitcoin, usd-coin..." aria-label="Search">
+                <button class="addCoinToTheList"></button>
+            </div>
+        </div>
+
+        <a class="backToTopBtn"></a>
+  
+        <div class="mainContent container-fluid">
+        </div>
+
+    </div>
+
+</body>
+</html>
